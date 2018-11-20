@@ -1,0 +1,17 @@
+{% load static %}
+<!Doctype html>
+<html lang="en">
+<head>
+    {% block head %}{% endblock %}
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"> -->
+</head>
+<body>
+    <div class="row">
+        <div class="center-block" style="width:30%">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+</body>
+</html>

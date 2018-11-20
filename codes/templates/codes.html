@@ -1,0 +1,8 @@
+{% extends "main.html" %}
+
+{% block content %}
+    {% for code in codes %}
+        <h3>{{ code.code }}</h3>
+        <p>Code is {% if code.claimed == 0 %}not{% endif %} claimed</p>
+    {% endfor %}
+{% endblock %}
